@@ -14,3 +14,17 @@
  *= require_self
  *= require bootstrap.min
  */
+
+.form-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: fit-content;
+    min-width: 300px;
+    margin: auto;
+}
+.form-center form {
+    width: 100%;
+}
