@@ -1,5 +1,16 @@
 class ItemsController < ApplicationController
-    def index
+    def index 
         @items = Item.all
-      end    
+      end
+    
+      def show
+       
+      end
+    
+      private
+    
+      def to_param
+        
+      end
+    
 end
