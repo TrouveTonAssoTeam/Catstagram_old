@@ -1,0 +1,16 @@
+<h1><%= @item.name %></h1>
+
+<div>
+  <p>Description : <%= @item.description %></p>
+  <p>Prix : <%= number_to_currency(@item.price) %></p>
+
+  <!-- Affichage de l'image -->
+  <% if @item.image_url.present? %>
+  <% else %>
+    <p>Aucune image disponible pour cet item.</p>
+  <% end %>
+
+  <!-- Autres informations spécifiques à afficher -->
+</div>
+
+<%= link_to 'Retour à la liste des items', items_path %>
